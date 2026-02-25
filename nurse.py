@@ -37,10 +37,10 @@ class Nurse:
             
             # compare username and password
             if nurse_data["name"] == username and nurse_data["password"] == password:
-                print("Login successful ")
+                print("Login successful ✅")
                 
                 return Nurse(username, password)
-        print("Wrong username or password ")
+        print("Wrong username or password ❌")
         return None
 
     def add_patient(self, patient_id, name, age):
@@ -49,7 +49,7 @@ class Nurse:
         # add the patient to the nurse's patient list
         self.patients.append(patient)
         
-        print("Patient added successfully ")
+        print("Patient added successfully ✅")
 
 
     def record_vitals(self, patient_id, temperature, blood_pressure):
@@ -61,9 +61,9 @@ class Nurse:
                 patient.temperature = temperature
                 patient.blood_pressure = blood_pressure
                 
-                print("Vitals recorded successfully ")
+                print("Vitals recorded successfully ✅")
                 return
-        print("Patient not found ")
+        print("Patient not found ❌")
 
 
     def view_patients(self):
@@ -75,6 +75,7 @@ class Nurse:
         for patient in self.patients:
             print("\n--- Patient Details ---")
             patient.display_info()  # call display_info method from Patient class
+
 
     
   
