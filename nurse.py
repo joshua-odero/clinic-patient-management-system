@@ -1,7 +1,6 @@
 import json
 from patient import Patient   
 
-
 class Nurse:
     
     def __init__(self, username, password):
@@ -12,11 +11,9 @@ class Nurse:
         # list to store patients added by this nurse
         self.patients = []
 
-
     @staticmethod
     def load_nurses(filename="data.json"):
         # this reads nurse data from a JSON file
-        
         try:
             # open the file in read mode
             with open(filename, "r") as file:
@@ -25,11 +22,9 @@ class Nurse:
         except FileNotFoundError:
             return []
 
-
     @staticmethod
     def authenticate(username, password, filename="data.json"):
         # this method checks if login details are correct
-        
         nurses = Nurse.load_nurses(filename)
 
         # check each nurse in the list
@@ -51,7 +46,6 @@ class Nurse:
         
         print("Patient added successfully ✅")
 
-
     def record_vitals(self, patient_id, temperature, blood_pressure):
         # search for patient by ID
         for patient in self.patients:
@@ -64,7 +58,6 @@ class Nurse:
                 print("Vitals recorded successfully ✅")
                 return
         print("Patient not found ❌")
-
 
     def view_patients(self):
         if not self.patients:
