@@ -1,0 +1,30 @@
+[
+    {
+        "id": "ronald3944",
+        "name": "Ronaldo Nyakwama",
+        "contact": "0743283944",
+        "gender": "M",
+        "role":"receptionist"
+    },
+    {
+        "id": "angela0922",
+        "name": "Angela Musamali",
+        "contact": "0705720922",
+        "gender": "F",
+        "role":"Nurse"
+    },
+    {
+        "id": "samantha6632",
+        "name": "Samantha Bora",
+        "contact": "0706312130",
+        "gender": "F",
+        "role":"Doctor"
+    },
+    {
+        "id": "joshua9256",
+        "name": "Joshua Odero",
+        "contact": "070707519256",
+        "gender": "M",
+        "role": "admin"
+    }
+]
