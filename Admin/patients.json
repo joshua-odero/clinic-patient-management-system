@@ -1,0 +1,142 @@
+[
+    {
+        "id": "john4587",
+        "name": "John Kamau",
+        "age": 34,
+        "contact": "0712344587",
+        "gender": "M"
+    },
+    {
+        "id": "mary7821",
+        "name": "Mary Wanjiku",
+        "age": 28,
+        "contact": "0798767821",
+        "gender": "F"
+    },
+    {
+        "id": "peter6632",
+        "name": "Peter Otieno",
+        "age": 41,
+        "contact": "0701126632",
+        "gender": "M"
+    },
+    {
+        "id": "lucy9945",
+        "name": "Lucy Achieng",
+        "age": 22,
+        "contact": "0723459945",
+        "gender": "F"
+    },
+    {
+        "id": "david1209",
+        "name": "David Mwangi",
+        "age": 37,
+        "contact": "0734561209",
+        "gender": "M"
+    },
+    {
+        "id": "grace7784",
+        "name": "Grace Njeri",
+        "age": 30,
+        "contact": "0745677784",
+        "gender": "F"
+    },
+    {
+        "id": "james4456",
+        "name": "James Kiptoo",
+        "age": 45,
+        "contact": "0756784456",
+        "gender": "M"
+    },
+    {
+        "id": "ann3654",
+        "name": "Ann Mutheu",
+        "age": 26,
+        "contact": "0767893654",
+        "gender": "F"
+    },
+    {
+        "id": "brian5412",
+        "name": "Brian Odhiambo",
+        "age": 33,
+        "contact": "0778905412",
+        "gender": "M"
+    },
+    {
+        "id": "lilian9023",
+        "name": "Lilian Chebet",
+        "age": 29,
+        "contact": "0789019023",
+        "gender": "F"
+    },
+    {
+        "id": "kevin6738",
+        "name": "Kevin Maina",
+        "age": 39,
+        "contact": "0712236738",
+        "gender": "M"
+    },
+    {
+        "id": "ruth1147",
+        "name": "Ruth Atieno",
+        "age": 31,
+        "contact": "0723341147",
+        "gender": "F"
+    },
+    {
+        "id": "samuel8890",
+        "name": "Samuel Kariuki",
+        "age": 48,
+        "contact": "0734458890",
+        "gender": "M"
+    },
+    {
+        "id": "esther5561",
+        "name": "Esther Moraa",
+        "age": 24,
+        "contact": "0745565561",
+        "gender": "F"
+    },
+    {
+        "id": "daniel3328",
+        "name": "Daniel Ouma",
+        "age": 36,
+        "contact": "0756673328",
+        "gender": "M"
+    },
+    {
+        "id": "faith9914",
+        "name": "Faith Jepkosgei",
+        "age": 27,
+        "contact": "0767789914",
+        "gender": "F"
+    },
+    {
+        "id": "alex7405",
+        "name": "Alex Mutiso",
+        "age": 40,
+        "contact": "0778897405",
+        "gender": "M"
+    },
+    {
+        "id": "carol1186",
+        "name": "Carol Nyambura",
+        "age": 32,
+        "contact": "0789901186",
+        "gender": "F"
+    },
+    {
+        "id": "patrick6620",
+        "name": "Patrick Onyango",
+        "age": 44,
+        "contact": "0711016620",
+        "gender": "M"
+    },
+    {
+        "id": "irene3359",
+        "name": "Irene Wairimu",
+        "age": 29,
+        "contact": "0722123359",
+        "gender": "F"
+    }
+]
