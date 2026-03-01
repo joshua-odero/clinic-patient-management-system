@@ -15,8 +15,8 @@ class Admin:
             raise TypeError(f"The {staff_id} does not belong to class Staff")   
 
 #Test cases
-""" 
-#patient
+
+""" #patient
 peter = Patient("peter6632")
 
 #staff
@@ -31,6 +31,4 @@ admin.update_patient_credentials(peter,{
 admin.update_staff_credentials(angela,{
     "name": "Emily"
 }) """
-
-#print(peter.credentials)
 

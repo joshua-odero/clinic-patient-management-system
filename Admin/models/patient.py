@@ -13,7 +13,7 @@ class Patient:
     eg. reading json file """
     @staticmethod 
     def generate_dict_data():
-        with open("patients.json", "r") as file:
+        with open("Admin/data/patients.json", "r") as file:
             patients_data = json.load(file)
         return patients_data 
 
@@ -99,4 +99,5 @@ class Patient:
                         continue #go to the next iteration
 
             print(f"\nThe updated data for id:{self.patient_id} is {found_patient}")
+            #write_data.write(file,self.patient_id,self.credentials)
         
