@@ -13,7 +13,7 @@ class Staff:
     eg. reading json file """
     @staticmethod 
     def generate_dict_data():
-        with open("../data/staff.json", "r") as file:
+        with open("Admin/data/staff.json", "r") as file:
             staff_data = json.load(file)
         return staff_data
 

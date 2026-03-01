@@ -1,7 +1,7 @@
-from nurse import Nurse  
+from Nurse.Models.nurse import Nurse  
 
 
-def main():
+def nurse_main():
     print("---- Nurse Login ----")
     
     # Get login credentials from user
@@ -58,8 +58,3 @@ def main():
         # Handle invalid menu choice
         else:
             print("Invalid choice ❌")
-
-
-# Run the program only if this file is executed directly
-if __name__ == "__main__":
-    main()

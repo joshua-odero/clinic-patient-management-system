@@ -13,7 +13,7 @@ class Patient:
     eg. reading json file """
     @staticmethod 
     def generate_dict_data():
-        with open("../data/patients.json", "r") as file:
+        with open("Admin/data/patients.json", "r") as file:
             patients_data = json.load(file)
         return patients_data 
 

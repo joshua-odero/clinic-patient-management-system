@@ -1,5 +1,5 @@
 import json
-from patient import Patient   
+from Nurse.Models.patient import Patient   
 
 
 class Nurse:
@@ -14,7 +14,7 @@ class Nurse:
 
 
     @staticmethod
-    def load_nurses(filename="data.json"):
+    def load_nurses(filename="Nurse/data/data.json"):
         # this reads nurse data from a JSON file
         
         try:
@@ -27,7 +27,7 @@ class Nurse:
 
 
     @staticmethod
-    def authenticate(username, password, filename="data.json"):
+    def authenticate(username, password, filename="Nurse/data/data.json"):
         # this method checks if login details are correct
         
         nurses = Nurse.load_nurses(filename)
