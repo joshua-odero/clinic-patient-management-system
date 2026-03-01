@@ -1,7 +1,7 @@
 #Importing Classes from modules
-from patient import Patient
-from staff import Staff
-from admin import Admin
+from Admin.models.patient import Patient
+from Admin.models.staff import Staff
+from Admin.models.admin import Admin
 
 def admin_main():
 

@@ -1,5 +1,5 @@
-from patient import Patient
-from staff import Staff
+from Admin.models.patient import Patient
+from Admin.models.staff import Staff
 
 class Admin:
     def update_patient_credentials(self,patient_id,updates):
@@ -15,8 +15,8 @@ class Admin:
             raise TypeError(f"The {staff_id} does not belong to class Staff")   
 
 #Test cases
-""" 
-#patient
+
+""" #patient
 peter = Patient("peter6632")
 
 #staff
@@ -31,6 +31,4 @@ admin.update_patient_credentials(peter,{
 admin.update_staff_credentials(angela,{
     "name": "Emily"
 }) """
-
-#print(peter.credentials)
 
