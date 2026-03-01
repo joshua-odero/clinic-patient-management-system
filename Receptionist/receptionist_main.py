@@ -1,6 +1,6 @@
-from patient_menu import PatientMenu
-from staff_menu import StaffMenu
-from appointments_menu import AppointmentMenu
+from Receptionist.Models.patient_menu import PatientMenu
+from Receptionist.Models.staff_menu import StaffMenu
+from Receptionist.Models.appointments_menu import AppointmentMenu
 
 
 class MainApp:

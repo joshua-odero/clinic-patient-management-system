@@ -1,4 +1,4 @@
-from patient_registration import Patient
+from Receptionist.Models.patient_registration import Patient
 
 class PatientMenu:
 

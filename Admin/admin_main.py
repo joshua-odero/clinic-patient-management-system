@@ -69,5 +69,5 @@ def admin_main():
             print("Invalid option")
 
 #You can call the function
-admin_main()
+#admin_main()
 
