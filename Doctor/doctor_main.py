@@ -1,6 +1,6 @@
-from utils.auth import AuthService
-from models.doctor import Doctor
-from utils.decorators import role_required
+from Doctor.utils.auth import AuthService
+from Doctor.models.doctor import Doctor
+from Doctor.utils.decorators import role_required
 
 
 auth = AuthService()

@@ -1,5 +1,5 @@
 from unittest.mock import MagicMock
-from models.doctor import Doctor
+from Doctor.models.doctor import Doctor
 
 
 def test_doctor_initialization():

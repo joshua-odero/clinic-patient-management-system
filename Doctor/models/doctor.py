@@ -1,5 +1,5 @@
-from models.user import User
-from database.db_manager import DatabaseManager
+from Doctor.models.user import User
+from Doctor.database.db_manager import DatabaseManager
 
 
 class Doctor(User):
