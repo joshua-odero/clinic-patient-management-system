@@ -2,7 +2,7 @@
 import json
 import os
 from datetime import datetime
-from patient_registration import Patient
+from Receptionist.Models.patient_registration import Patient
 
 class Appointment:
     # check if patient exists in the system

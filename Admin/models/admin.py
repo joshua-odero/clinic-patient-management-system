@@ -1,5 +1,5 @@
-from patient import Patient
-from staff import Staff
+from Admin.models.patient import Patient
+from Admin.models.staff import Staff
 
 class Admin:
     def update_patient_credentials(self,patient_id,updates):

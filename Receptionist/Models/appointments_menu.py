@@ -1,4 +1,4 @@
-from appointments import Appointment
+from Receptionist.Models.appointments import Appointment
 
 class AppointmentMenu:
 

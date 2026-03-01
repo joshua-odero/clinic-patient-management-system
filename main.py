@@ -1,32 +1,22 @@
+#Importing Classes from modules
 from Admin.admin_main import admin_main
-from Nurse import nurse_main
-from Doctor import doctor_main
-from Receptionist import receptionist_main
+from Receptionist.receptionist_main import MainApp
 
 def main():
     while True:
         print("\n=== Hospital Management System ===")
-        print("1. Receptionist")
-        print("2. Nurse")
-        print("3. Doctor")
-        print("4. Admin")
-        print("5. Exit")
+
+        print("1. Admin")
+        print("2. Reception")
 
         role = input("Select your role: ")
 
         if role == "1":
-            receptionist_main()
-        elif role == "2":
-            nurse_main()
-        elif role == "3":
-            doctor_main()
-        elif role == "4":
             admin_main()
-        elif role == "5":
-            print("Exiting system...")
-            break
+            print("You have chosen 1")
+        elif role == "2":
+            MainApp.run()
         else:
             print("Invalid selection. Try again.")
 
-if __name__ == "__main__":
-    main()
+main()

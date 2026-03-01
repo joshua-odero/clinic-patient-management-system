@@ -1,4 +1,4 @@
-from staff_registration import Staff
+from Receptionist.Models.staff_registration import Staff
 
 class StaffMenu:
 
