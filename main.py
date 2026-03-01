@@ -21,7 +21,7 @@ def main():
         elif role == "2":
             MainApp.run()
         elif role == "3":
-            pass
+            nurse_main()
         elif role == "4":
             pass
         else:
