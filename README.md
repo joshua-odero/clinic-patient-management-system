@@ -5,11 +5,14 @@ This is a python-based CLI application that demonstrates how small health clinic
 - **Nurse** views patient information, updates patient records, records vitals such as blood pressure and weight while checking the appointments
 - **Doctor** views patient records, order lab tests, view lab results,prescriptions, and update patient status
 
-![Receptionist's Interface](demo_pics/receptionist_if.png)
-*Receptionist's Interface*
+![Main Interface](demo_pics/main_if.png)
+*Main Interface*
 
 ![Admin's Interface](demo_pics/admin_if.png)
 *Admin's Interface*
+
+![Receptionist's Interface](demo_pics/receptionist_if.png)
+*Receptionist's Interface*
 
 ![Nurse's Interface](demo_pics/nurse_if.png)
 *Nurse's Interface*
@@ -39,7 +42,10 @@ git clone <your SSH/Http path>
 ```
 
 ## Installing dependencies
-Switch to the app directory using the **cd** command, Use the **pip** to install the project dependencies from PyPi
+Switch to the app directory using the **cd** command, Use the **pip** to install the project dependencies from pypi such as:
+- **pytest** to run automated tests for the program
+- **Rich** for styling terminal output (colors, formatting) 
+- **iniconfig** and **pluggy** which are plugins used internally by pytest.
 
 ```bash
 cd clinic-patient-management-system
@@ -48,6 +54,15 @@ cd clinic-patient-management-system
 ```bash
 pip install <package_name>
 ```
+Install the following additional packages:
+
+Rich – Library for styling terminal output (colors, formatting).  I installed but didn't have time to employ it
+
+iniconfig – Internal configuration library used by pytest.
+
+pluggy – Plugin system used internally by pytest.
+
+packaging – Handles version checking and dependency management for Python packages.
 
 ## Running the project
 In the project's root directory, execute the following command to run a .py script within the directory. Use **python** or **python3** commands depending on your OS:
