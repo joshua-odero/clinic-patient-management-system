@@ -14,7 +14,7 @@ class Staff:
     @staticmethod
     def get_staff_by_staff_id(staff_id):
         # Build file path where staff JSON is stored
-        file_path = f"staff/{staff_id}.json"
+        file_path = f"Receptionist/staff/{staff_id}.json"
         # if file does not exist, return None -> staff not found
         if not os.path.exists(file_path):
             return None
@@ -30,7 +30,7 @@ class Staff:
     def update_staff_details(staff):
         # Extract staff ID from dictionary
         staff_id = staff.get("staff_id")
-        file_path = f"staff/{staff_id}.json"
+        file_path = f"Receptionist/staff/{staff_id}.json"
         # Only updates if file exists -> no file, no update
         if not os.path.exists(file_path):
             return None
@@ -74,7 +74,7 @@ class Staff:
         }
 
         # Saves staff data as JSON file 
-        file_path = f"staff/{staff_id}.json"
+        file_path = f"Receptionist/staff/{staff_id}.json"
 
         with open(file_path, "w") as file:
             json.dump(staff, file, indent=4)
