@@ -15,7 +15,7 @@ class Patient:
     @staticmethod
     def get_patient_by_patient_id(patient_id):
         # Build file path where patient JSON is stored
-        file_path = f"patients/{patient_id}.json"
+        file_path = f"Receptionist/patients/{patient_id}.json"
         # if file does not exist, return None -> patient not found
         if not os.path.exists(file_path):
             return None
@@ -31,7 +31,7 @@ class Patient:
     def update_patient_details(patient):
         # Extract patient ID from dictionary
         patient_id = patient.get("patient_id")
-        file_path = f"patients/{patient_id}.json"
+        file_path = f"Receptionist/patients/{patient_id}.json"
         # Only updates if file exists -> no file, no update
         if not os.path.exists(file_path):
             return None
@@ -77,7 +77,7 @@ class Patient:
         }
 
         # Saves patient data as JSON file 
-        file_path = f"patients/{patient_id}.json"
+        file_path = f"Receptionist/patients/{patient_id}.json"
 
         with open(file_path, "w") as file:
             json.dump(patient, file, indent=4)

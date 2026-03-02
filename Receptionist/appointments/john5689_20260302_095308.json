@@ -1,0 +1,8 @@
+{
+    "appointment_id": "john5689_20260302_095308",
+    "patient_id": "john5689",
+    "reason": "Tummy ache",
+    "status": "active",
+    "start_time": "2026-03-02 09:53:08",
+    "end_time": null
+}
