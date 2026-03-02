@@ -2,7 +2,7 @@ from Nurse.Models.nurse import Nurse
 
 
 def nurse_main():
-    print("---- Nurse Login ----")
+    print("\n\n---- Nurse Login ----")
     
     # Get login credentials from user
     username = input("Enter username: ").strip()
