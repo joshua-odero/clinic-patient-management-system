@@ -32,10 +32,10 @@ class Nurse:
             
             # compare username and password
             if nurse_data["name"] == username and nurse_data["password"] == password:
-                print("Login successful ✅")
+                print("Login successful ")
                 
                 return Nurse(username, password)
-        print("Wrong username or password ❌")
+        print("Wrong username or password ")
         return None
 
     def add_patient(self, patient_id, name, age):
