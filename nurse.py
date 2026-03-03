@@ -44,7 +44,7 @@ class Nurse:
         # add the patient to the nurse's patient list
         self.patients.append(patient)
         
-        print("Patient added successfully ✅")
+        print("Patient added successfully ")
 
     def record_vitals(self, patient_id, temperature, blood_pressure):
         # search for patient by ID
@@ -55,9 +55,9 @@ class Nurse:
                 patient.temperature = temperature
                 patient.blood_pressure = blood_pressure
                 
-                print("Vitals recorded successfully ✅")
+                print("Vitals recorded successfully ")
                 return
-        print("Patient not found ❌")
+        print("Patient not found ")
 
     def view_patients(self):
         if not self.patients:
