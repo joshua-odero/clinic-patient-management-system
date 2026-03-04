@@ -6,11 +6,14 @@ This is a python-based CLI application that demonstrates how small health clinic
 - **Nurse** views patient information, updates patient records, records vitals such as blood pressure and weight while checking the appointments
 - **Doctor** views patient records, order lab tests, view lab results,prescriptions, and update patient status
 
-![Receptionist's Interface](demo_pics/receptionist_if.png)
-*Receptionist's Interface*
+![CLI Interface](demo_pics/cli_if.png)
+*Main Interface*
 
 ![Admin's Interface](demo_pics/admin_if.png)
 *Admin's Interface*
+
+![Receptionist's Interface](demo_pics/receptionist_if.png)
+*Receptionist's Interface*
 
 ![Nurse's Interface](demo_pics/nurse_if.png)
 *Nurse's Interface*
@@ -40,7 +43,10 @@ git clone <your SSH/Http path>
 ```
 
 ## Installing dependencies
-Switch to the app directory using the **cd** command, Use the **pip** to install the project dependencies from PyPi
+Switch to the app directory using the **cd** command, Use the **pip** to install the project dependencies from pypi such as:
+- **pytest** to run automated tests for the program
+- **Rich** for styling terminal output (colors, formatting) 
+- **iniconfig** and **pluggy** which are plugins used internally by pytest.
 
 ```bash
 cd clinic-patient-management-system
@@ -48,6 +54,13 @@ cd clinic-patient-management-system
 
 ```bash
 pip install <package_name>
+```
+or
+
+Install all the packages required by the Doctor module:
+
+```bash
+pip install -r Doctor/requirements.txt
 ```
 
 ## Running the project
@@ -63,7 +76,7 @@ python <example_file.py>
 ```
 ## Task assignment instructions
 This OOP project has collaborators who handle different modules:
-
+- **CLI entry point** by Joshua Odero
 - **Receptionist Module** by Ronaldo Nyakwama
 - **Admin Module** by Joshua Odero
 - **Nurse Module** by Angela Musamali

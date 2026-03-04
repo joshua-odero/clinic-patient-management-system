@@ -20,12 +20,12 @@ class Appointment:
         # finds an appointment with matching patient_id and active status
         # returns existing appointment if found, otherwise None
         # iterate through files
-        for file in os.listdir("appointments"):
+        for file in os.listdir("Receptionist/appointments"):
             # process only JSON files
             if not file.endswith(".json"):
                 continue
 
-            file_path = f"appointments/{file}"
+            file_path = f"Receptionist/appointments/{file}"
             
             # load appointment data
             with open(file_path, "r") as file:
@@ -68,7 +68,7 @@ class Appointment:
         }
 
         # File path to store appointment data
-        file_path = f"appointments/{appointment_id}.json"
+        file_path = f"Receptionist/appointments/{appointment_id}.json"
 
         # Write appointment data to file
         with open(file_path, "w") as file:
@@ -82,7 +82,7 @@ class Appointment:
     def update_appointment(appointment_id, updates):
         # loads appointment files, applies updates, and writes back to file.
         # 'updates' -> key-value pair (dictionary)
-        file_path = f"appointments/{appointment_id}.json"
+        file_path = f"Receptionist/appointments/{appointment_id}.json"
 
         # file does not exist -> invalid appointment ID
         if not os.path.exists(file_path):
@@ -108,7 +108,7 @@ class Appointment:
     def checkout_patient(appointment_id):
         # marks appointment as complete and records end time
         # prevents double checkout
-        file_path = f"appointments/{appointment_id}.json"
+        file_path = f"Receptionist/appointments/{appointment_id}.json"
 
         # If file not found, appointment ID is invalid
         if not os.path.exists(file_path):
