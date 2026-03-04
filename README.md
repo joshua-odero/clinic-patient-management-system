@@ -1,4 +1,5 @@
 # clinic-patient-management-system
+
 This is a python-based CLI application that demonstrates how small health clinics manage patient records,appointments, and medical history using Object Oriented Programming(OOP).  It consists of the following objects:
 - **Receptionist** registers staff and patients and manages appointments
 - **Admin** updates the credentials of staff members and patients

@@ -33,5 +33,6 @@ def main():
             print("Invalid selection. Try again.")
 
 
+# Run the program only if this file is executed directly
 if __name__ == "__main__":
     main()
