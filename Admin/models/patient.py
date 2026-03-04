@@ -2,6 +2,7 @@ import json
 import re
 
 class Patient:
+    
     #initialize instance attributes
     def __init__(self,patient_id):
         self._patient_id = None #initialize empty patient id (instance attribute) => string
@@ -9,13 +10,34 @@ class Patient:
 
         self.patient_id = patient_id #use @property setter to validate instance attribute
 
-    """ #use @static method to define reusable instance methods
-    eg. reading json file """
+    """ #use @staticmethod to define reusable instance methods
+    eg. reading and updating json file """
     @staticmethod 
     def generate_dict_data():
-        with open("Admin/data/patients.json", "r") as file:
-            patients_data = json.load(file)
-        return patients_data 
+        file_path ="Admin/data/patients.json"
+        try:
+            with open(file_path, "r") as file:
+                patients_data = json.load(file)
+            return patients_data 
+        except Exception as e:
+            print("An error occured while reading JSON: {e}")
+    
+    @staticmethod
+    def update_dict_data(id,what_to_update):
+        file_path = "Admin/data/patients.json"
+        try:
+            with open(file_path, "r") as file:
+                patients_data = json.load(file)
+
+            for patient in patients_data:
+                if patient["id"] == id:
+                    patient.update(what_to_update)
+                    break
+            with open(file_path, 'w') as file:
+                json.dump(patients_data, file, indent=4)
+            
+        except Exception as e:
+            print(f"An error occured while reading JSON: {e}")
 
     #control the patient_id instance attribute with @property decorator
     # get instance's patient_id by @property getter => self.patient_id
@@ -98,6 +120,6 @@ class Patient:
                         print(f"\nInvalid. Enter M or F to update")
                         continue #go to the next iteration
 
-            print(f"\nThe updated data for id:{self.patient_id} is {found_patient}")
-            #write_data.write(file,self.patient_id,self.credentials)
+            print(f"\nUpdated data for id:{self.patient_id}")
+            self.update_dict_data(self.patient_id,self.credentials)
         
