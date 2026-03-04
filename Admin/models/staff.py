@@ -9,13 +9,34 @@ class Staff:
 
         self.staff_id = staff_id #use @property setter to validate instance attribute
 
-    """ #use @static method to define reusable instance methods
-    eg. reading json file """
+    """ #use @staticmethod to define reusable instance methods
+    eg. reading and updating json file """
     @staticmethod 
     def generate_dict_data():
-        with open("Admin/data/staff.json", "r") as file:
-            staff_data = json.load(file)
-        return staff_data
+        file_path ="Admin/data/staff.json"
+        try:
+            with open(file_path, "r") as file:
+                patients_data = json.load(file)
+            return patients_data 
+        except Exception as e:
+            print("An error occured while reading JSON: {e}")
+    
+    @staticmethod
+    def update_dict_data(id,what_to_update):
+        file_path = "Admin/data/staff.json"
+        try:
+            with open(file_path, "r") as file:
+                patients_data = json.load(file)
+
+            for patient in patients_data:
+                if patient["id"] == id:
+                    patient.update(what_to_update)
+                    break
+            with open(file_path, 'w') as file:
+                json.dump(patients_data, file, indent=4)
+            
+        except Exception as e:
+            print(f"An error occured while reading JSON: {e}")
 
     #control the staff_id instance attribute with @property decorator
     # get instance's staff_id by @property getter => self.staff_id
@@ -97,4 +118,5 @@ class Staff:
                         self.credentials["name"] = value
                         found_staff["name"] = value
 
-            print(f"\nThe updated data for id:{self.staff_id} is {found_staff}")
+            print(f"\nUpdated data for id:{self.staff_id}")
+            self.update_dict_data(self.staff_id,self.credentials)

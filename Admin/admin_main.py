@@ -44,9 +44,9 @@ def admin_main():
             staff_member_updates = {}
 
             if staff_id:
-                new_name = input("Enter the patient's new name(Leave blank if N/A): ")
-                new_contact = input("Enter the patient's new contact(Leave blank if N/A): ")
-                new_role = input("Enter the patient's new role(Leave blank if N/A): ")
+                new_name = input("Enter the staff's new name(Leave blank if N/A): ")
+                new_contact = input("Enter the staff's new contact(Leave blank if N/A): ")
+                new_role = input("Enter the staff's new role(Leave blank if N/A): ")
 
                 if new_name:
                     staff_member_updates["name"] = new_name
