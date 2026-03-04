@@ -5,7 +5,7 @@ This is a python-based CLI application that demonstrates how small health clinic
 - **Nurse** views patient information, updates patient records, records vitals such as blood pressure and weight while checking the appointments
 - **Doctor** views patient records, order lab tests, view lab results,prescriptions, and update patient status
 
-![Main Interface](demo_pics/main_if.png)
+![CLI Interface](demo_pics/cli_if.png)
 *Main Interface*
 
 ![Admin's Interface](demo_pics/admin_if.png)
@@ -54,15 +54,13 @@ cd clinic-patient-management-system
 ```bash
 pip install <package_name>
 ```
-Install the following additional packages:
+or
 
-Rich – Library for styling terminal output (colors, formatting).  I installed but didn't have time to employ it
+Install all the packages required by the Doctor module:
 
-iniconfig – Internal configuration library used by pytest.
-
-pluggy – Plugin system used internally by pytest.
-
-packaging – Handles version checking and dependency management for Python packages.
+```bash
+pip install -r Doctor/requirements.txt
+```
 
 ## Running the project
 In the project's root directory, execute the following command to run a .py script within the directory. Use **python** or **python3** commands depending on your OS:
@@ -77,7 +75,7 @@ python <example_file.py>
 ```
 ## Task assignment instructions
 This OOP project has collaborators who handle different modules:
-
+- **CLI entry point** by Joshua Odero
 - **Receptionist Module** by Ronaldo Nyakwama
 - **Admin Module** by Joshua Odero
 - **Nurse Module** by Angela Musamali
