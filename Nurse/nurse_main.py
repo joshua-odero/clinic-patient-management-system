@@ -57,4 +57,4 @@ def nurse_main():
 
         # Handle invalid menu choice
         else:
-            print("Invalid choice ❌")
+            print("Invalid choice ")
